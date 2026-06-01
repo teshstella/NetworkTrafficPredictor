@@ -4,13 +4,11 @@ on:
   push:
     branches: ["main"]
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -31,7 +29,7 @@ jobs:
       - name: Upload Frontend Folder Assets
         uses: actions/upload-pages-artifact@v3
         with:
-          # This directly uploads just your frontend folder contents to the root of your web app
+          # This tells GitHub to only grab your Frontend web folder files
           path: './Frontend'
           
       - name: Deploy Live to GitHub Cloud
