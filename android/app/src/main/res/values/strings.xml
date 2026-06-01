@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Network Traffic Monitor</string>
+    <string name="title_activity_main">Network Traffic Monitor</string>
+    <string name="package_name">com.kabianga.networkmonitor</string>
+    <string name="custom_url_scheme">com.kabianga.networkmonitor</string>
+</resources>
