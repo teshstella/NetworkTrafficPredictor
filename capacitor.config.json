@@ -1,5 +1,9 @@
 {
-  "appId": "com.kabianga.networkmonitor",
+  "appId": "com.networktrafficpredictor.app",
   "appName": "Network Traffic Monitor",
-  "webDir": "Frontend"
+  "webDir": "Frontend",
+  "server": {
+    "url": "http://10.10.14.0:5500",
+    "cleartext": true
+  }
 }

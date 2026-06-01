@@ -1,19 +1,19 @@
 {
   "name": "networktrafficpredictor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "homepage": "https://teshstella.github.io/NetworkTrafficPredictor",
   "scripts": {
-    "build": "node -e \"const fs = require('fs'); fs.mkdirSync('www', { recursive: true }); fs.cpSync('Frontend', 'www', { recursive: true });\" && npx cap sync android",
-    "cap": "cap"
+    "build": "echo 'Skipping framework build'",
+    "cap": "cap",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d Frontend"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "@capacitor/android": "^8.3.4",
     "@capacitor/cli": "^8.3.4",
     "@capacitor/core": "^8.3.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
