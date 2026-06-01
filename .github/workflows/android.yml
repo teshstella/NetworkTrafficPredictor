@@ -23,12 +23,13 @@ jobs:
         distribution: 'zulu'
         java-version: '17'
 
-    - name: Install Hard-Locked Dependencies
+    - name: Install Dependencies
       run: npm install
 
-    - name: Clear Android Asset Cache
+    - name: Prepare Local App Assets
       run: |
-        npx cap copy android
+        mkdir -p www
+        cp -r Frontend/* www/
         npx cap sync android
 
     - name: Build App with Gradle Cloud Compiler
