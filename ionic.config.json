@@ -1,0 +1,7 @@
+{
+  "name": "Network Traffic Monitor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
