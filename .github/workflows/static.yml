@@ -29,7 +29,6 @@ jobs:
       - name: Upload Frontend Folder Assets
         uses: actions/upload-pages-artifact@v3
         with:
-          # This tells GitHub to only grab your Frontend web folder files
           path: './Frontend'
           
       - name: Deploy Live to GitHub Cloud
