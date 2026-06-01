@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Skipping frontend framework compile step'",
+    "build": "node -e \"const fs = require('fs'); fs.mkdirSync('www', { recursive: true }); fs.cpSync('Frontend', 'www', { recursive: true });\" && npx cap sync android",
     "cap": "cap"
   },
   "keywords": [],

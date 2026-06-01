@@ -23,14 +23,10 @@ jobs:
         distribution: 'zulu'
         java-version: '17'
 
-    - name: Install Dependencies
-      run: npm install
-
-    - name: Prepare Local App Assets
+    - name: Install Dependencies & Prepare Assets
       run: |
-        mkdir -p www
-        cp -r Frontend/* www/
-        npx cap sync android
+        npm install
+        npm run build
 
     - name: Build App with Gradle Cloud Compiler
       run: |
